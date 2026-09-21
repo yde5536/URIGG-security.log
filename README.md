@@ -1,7 +1,6 @@
 # URIGG security.log
 
-정보보안을 공부하며 남기는 개념 정리와 실습 기록이다.
-웹 해킹 / 네트워크 / 암호학 / 시스템 / 자격증을 제로부터 정리한다.
+정보보안 지망생이 정보보안을 공부하며 남기는 개념 정리와 실습 기록이다.
 
 블로그: [urigg-security.tistory.com](https://urigg-security.tistory.com)
 
