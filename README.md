@@ -43,6 +43,7 @@
 
 - [[리눅스마스터 2급 공부 계획 및 현황]](certs/linuxmaster-study/리눅스마스터2급-공부계획-및-현황.md)
 - [[리눅스마스터 2급 오답노트]](certs/linuxmaster-study/리눅스마스터2급-오답노트.md)
+- [[리눅스마스터 2급 상 복습 모의고사]](certs/linuxmaster-study/상복습-모의고사/)
 
 리눅스마스터 2급 노트 (블로그 시리즈)
 
