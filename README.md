@@ -62,6 +62,7 @@ URIGG-security.log/
 ├── crypto/     암호학          (예정)
 └── certs/      자격증
     ├── linuxmaster-study/  리눅스마스터 2급 공부 계획·오답노트
+    │   └── 상복습-모의고사/  상 복습 모의고사 문제지·정답표
     └── linuxmaster-notes/  리눅스마스터 2급 노트 (블로그 시리즈)
 ```
 
