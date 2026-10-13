@@ -50,6 +50,13 @@
 - [[#0 - 시작하며]](certs/linuxmaster-notes/00-시작하며.md)
 - #1 (작성 예정)
 
+### 커리큘럼 (Curriculum)
+
+시리즈별 학습 커리큘럼
+
+- [[리눅스 제로부터 커리큘럼]](curriculum/linux-curriculum.md)
+- [[네트워크 첫걸음 커리큘럼]](curriculum/network-curriculum.md)
+
 ---
 
 ## 폴더 구조
@@ -60,6 +67,7 @@ URIGG-security.log/
 ├── web/        웹 해킹        (예정)
 ├── network/    네트워크 기초
 ├── crypto/     암호학          (예정)
+├── curriculum/ 학습 커리큘럼 (리눅스 제로부터·네트워크 첫걸음)
 └── certs/      자격증
     ├── linuxmaster-study/  리눅스마스터 2급 공부 계획·오답노트
     │   └── mock-exam-high/  상 복습 모의고사 문제지·정답표
