@@ -44,6 +44,7 @@
 - [[리눅스마스터 2급 공부 계획 및 현황]](certs/linuxmaster-study/리눅스마스터2급-공부계획-및-현황.md)
 - [[리눅스마스터 2급 오답노트]](certs/linuxmaster-study/리눅스마스터2급-오답노트.md)
 - [[리눅스마스터 2급 상 복습 모의고사]](certs/linuxmaster-study/mock-exam-high/)
+- [[리눅스마스터 2급 중·하 복습 모의고사]](certs/linuxmaster-study/mock-exam-mid-low/)
 
 리눅스마스터 2급 노트 (블로그 시리즈)
 
@@ -70,7 +71,8 @@ URIGG-security.log/
 ├── curriculum/ 학습 커리큘럼 (리눅스 제로부터·네트워크 첫걸음)
 └── certs/      자격증
     ├── linuxmaster-study/  리눅스마스터 2급 공부 계획·오답노트
-    │   └── mock-exam-high/  상 복습 모의고사 문제지·정답표
+    │   ├── mock-exam-high/  상 복습 모의고사 문제지·정답표
+    │   └── mock-exam-mid-low/  중·하 복습 모의고사 문제지·정답표
     └── linuxmaster-notes/  리눅스마스터 2급 노트 (블로그 시리즈)
 ```
 
