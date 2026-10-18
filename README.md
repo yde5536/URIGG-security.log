@@ -57,6 +57,7 @@
 
 - [[리눅스 제로부터 커리큘럼]](curriculum/linux-curriculum.md)
 - [[네트워크 첫걸음 커리큘럼]](curriculum/network-curriculum.md)
+- [[보안 공부 로드맵]](curriculum/roadmap.md)
 
 ---
 
