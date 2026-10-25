@@ -1,0 +1,42 @@
+name: Discord 커밋 알림
+
+on:
+  push:
+
+permissions:
+  contents: read
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    # 브랜치 삭제처럼 커밋이 없는 푸시는 알리지 않는다
+    if: ${{ github.event.commits[0] != null }}
+    steps:
+      - name: 디스코드로 알림 보내기
+        env:
+          DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
+          AVATAR: https://raw.githubusercontent.com/${{ github.repository }}/main/.github/assets/notify_cat.png
+        run: |
+          if [ -z "$DISCORD_WEBHOOK" ]; then
+            echo "DISCORD_WEBHOOK 시크릿이 없어서 건너뜀"
+            exit 0
+          fi
+          # 커밋 메시지를 셸에 직접 넣지 않고 이벤트 JSON에서 jq로 읽는다 (명령 주입 방지)
+          jq -n --slurpfile e "$GITHUB_EVENT_PATH" --arg avatar "$AVATAR" '
+            $e[0] as $ev
+            | ($ev.ref | sub("^refs/heads/"; "")) as $br
+            | ($ev.commits | length) as $n
+            | {
+                username: "커밋 알림 고양이",
+                avatar_url: $avatar,
+                embeds: [{
+                  title: "[\($ev.repository.name):\($br)] 새 커밋 \($n)개",
+                  url: $ev.compare,
+                  color: 2241369,
+                  author: { name: $ev.sender.login, icon_url: $ev.sender.avatar_url, url: $ev.sender.html_url },
+                  description: ([ $ev.commits[:10][]
+                    | "[`\(.id[:7])`](\(.url)) \(.message | split("\n")[0])" ] | join("\n")),
+                  timestamp: $ev.head_commit.timestamp
+                }]
+              }' > payload.json
+          curl -sS --fail-with-body -H "Content-Type: application/json" -d @payload.json "$DISCORD_WEBHOOK"
