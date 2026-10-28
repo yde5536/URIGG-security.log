@@ -46,6 +46,7 @@
 - [[리눅스마스터 2급 상 복습 모의고사]](certs/linuxmaster-study/mock-exam-high/)
 - [[리눅스마스터 2급 중·하 복습 모의고사]](certs/linuxmaster-study/mock-exam-mid-low/)
 - [[리눅스마스터 2급 오답 총집합 모의고사]](certs/linuxmaster-study/mock-exam-wrong/)
+- [[리눅스마스터 2급 오답 정리 노트]](certs/linuxmaster-study/리눅스마스터2급-오답정리노트.md)
 
 리눅스마스터 2급 노트 (블로그 시리즈)
 
