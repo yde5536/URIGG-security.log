@@ -4,6 +4,8 @@
 
 블로그: [[urigg-security.tistory.com]](https://urigg-security.tistory.com)
 
+시큐리티 허브: [[urigg.pages.dev]](https://urigg.pages.dev)
+
 ---
 
 ## 목차
